@@ -9,7 +9,7 @@ export const fetchProducts = createAsyncThunk(
     const params = {};
     if (search) params.search = search;
     if (category) params.category = category;
-    const response = await axios.get('http://localhost:5000/api/products', { params });
+    const response = await axios.get('https://ecom-be-ux0n.onrender.com/api/products', { params });
     return response.data;
   }
 );
